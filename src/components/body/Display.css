@@ -1,0 +1,13 @@
+.display_component {
+  margin: 30px 0;
+  border-radius: 10px;
+  justify-content: center;
+}
+.displaySection {
+  background-color: #BD986B;
+  color: white;
+  border-radius: 5px;
+}
+.displaySection p{
+    font-weight: 500;
+}

@@ -1,0 +1,20 @@
+.quotesList_list{
+    text-align: center;
+}
+.quotesList_section{
+    background-color: #FBEEC1;
+    align-items: center;
+    border-radius: 10px;
+    width: 96%;
+    padding: 10px 0;
+    margin: 40px 0;
+    box-shadow: 5px 10px #888888;
+    
+}
+.quotesList{
+    max-height: 70vh;
+    overflow-y: auto;
+}
+.quotesList::-webkit-scrollbar {
+    display: none;
+}

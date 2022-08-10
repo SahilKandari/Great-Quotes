@@ -1,0 +1,21 @@
+.allQuotes_section {
+  justify-content: center;
+  margin: 50px 0;
+}
+.allQuotes hr {
+  margin-top: 20px;
+}
+.allQuotes_button {
+  display: flex;
+  justify-content: start;
+}
+.allQuotes_line {
+  width: 97%;
+  padding-left: 12px;
+}
+.allQuotes ul {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0;
+}

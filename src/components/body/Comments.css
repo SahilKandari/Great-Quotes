@@ -1,0 +1,19 @@
+.comments_section{
+justify-content: center;
+margin-top: 3rem;
+}
+.comments_section ul{
+    list-style: none;
+font-size: 16px;
+max-height: 80vh;
+overflow-y: auto;
+margin: 0;
+padding: 0;
+}
+
+.comments_section ul::-webkit-scrollbar{
+    display: none;
+}
+.displayInput{
+    display: none;
+}
