@@ -6,8 +6,8 @@
   margin-top: 20px;
 }
 .allQuotes_button {
-  display: flex;
-  justify-content: start;
+  display: flex-start;
+  /* justify-content: start; */
 }
 .allQuotes_line {
   width: 97%;

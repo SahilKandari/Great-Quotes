@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useCallback } from "react";
 import "./AllQuotes.css";
 import QuotesList from "./QuotesList";
 import { useDispatch } from "react-redux";
@@ -11,7 +11,7 @@ const AllQuotes = () => {
   const authorData = useSelector((state) => state.quote.comments);
   const toggle = useSelector((state) => state.quote.toggle);
   const once = useRef(true);
-  const fetchAuthorData = () => {
+  const fetchAuthorData = useCallback(() => {
     if (once.current) {
       once.current = false;
 
@@ -26,10 +26,10 @@ const AllQuotes = () => {
           console.log(err.message);
         });
     }
-  };
+  }, [dispatch]);
   useEffect(() => {
     fetchAuthorData();
-  }, [dispatch]);
+  }, [fetchAuthorData]);
 
   const ascendingHandler = () => {
     dispatch(quoteActions.ascendingOrder());
